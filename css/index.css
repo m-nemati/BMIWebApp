@@ -1,0 +1,15 @@
+body {
+  font-family: VazirmatnRegular;
+}
+#headerTitle {
+  font-family: VazirmatnBold;
+  margin-top: 10px;
+}
+#formDiv {
+  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+  padding: 20px;
+}
+#result {
+  color: white;
+  background-color: #c5d3e2;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <!-- Meta tags-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title & Icon-->
+    <title>BMI App</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Load CSS Files-->
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- Navigation Menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">لوگوی سایت</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">منوی1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">درباره BMI</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h2 id="headerTitle" class="text-center">محاسبگر شاخص BMI</h2>
+    <div id="formDiv" class="container d-flex justify-content-center">
+      <!-- Form -->
+
+      <fieldset class="border p-2">
+        <div class="mb-3 mt-3">
+          <label for="userWeight" class="form-label"
+            >وزن (برحسب کیلو گرم)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="userWeight"
+            name="userWeight"
+            autofocus
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="userHeight" class="form-label"
+            >قد (بر حسب سانتی متر)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="userHeight"
+            name="userHeight"
+            required
+          />
+        </div>
+        <button class="btn btn-warning" onclick="bmiCalculate()">محاسبه</button>
+      </fieldset>
+    </div>
+    <!-- Show Results-->
+    <div id="result" class="container text-center p-2 mt-2">
+      <p id="bmiValue" class="display-6">مقدار شاخص BMI</p>
+      <p id="category" class="display-6">وضعیت وزنی</p>
+    </div>
+    <!-- Load JavaScript Files-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/calculate.js"></script>
+  </body>
+</html>
